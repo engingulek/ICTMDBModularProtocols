@@ -7,7 +7,7 @@ A Swift package providing a modular architecture for building TV show apps in iO
 Used to assemble and return the main screen of the application.
 ```swift
 public protocol HomeModuleProtocol {
-    func createHomeModule() -> UIViewController
+    func createHomeModule() -> AnyView
 }
 ```
 
@@ -20,7 +20,7 @@ public enum AllListType {
 }
 
 public protocol AllListModuleProtocol {
-    func createAllListModule(type: AllListType) -> UIViewController
+    func createAllListModule(type: AllListType) -> AnyView
 }
 
 ```
@@ -29,7 +29,7 @@ public protocol AllListModuleProtocol {
 Displays detailed information about a selected TV show.
 ```swift
 public protocol TvShowDetailProtocol {
-    func createTvShowDetailModule(id: Int?) -> UIViewController
+    func createTvShowDetailModule(id: Int?) -> AnyView
 }
 ```
 
@@ -37,7 +37,7 @@ public protocol TvShowDetailProtocol {
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/ModularTVShowPackage.git", from: "0.0.2")
+    .package(url: "https://github.com/your-username/ModularTVShowPackage.git", branch: "version/swiftui")
 ]
 ```
 
