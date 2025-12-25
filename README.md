@@ -37,7 +37,7 @@ public protocol TvShowDetailProtocol {
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-username/ModularTVShowPackage.git", from: "0.0.2")
+    .package(url: "https://github.com/your-username/ModularTVShowPackage.git", from: "0.0.1")
 ]
 ```
 
